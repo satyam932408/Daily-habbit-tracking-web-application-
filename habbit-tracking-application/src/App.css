@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 0;
+}
+
+.app-header {
+  background: #000000;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.motivational-quote {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs button:hover {
+  border-color: #10b981;
+  color: #10b981;
+  transform: translateY(-2px);
+}
+
+.nav-tabs button.active {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.main-content {
+  max-width: 100%;
+  margin: 0;
+  background: #f8f9fa;
+  padding: 0;
+  min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 768px) {
+  .motivational-quote {
+    font-size: 1.8rem;
+  }
+
+  .nav-tabs {
+    margin: 10px;
+  }
+
+  .nav-tabs button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
